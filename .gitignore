@@ -1,1 +1,4 @@
 /.idea
+
+/report/out/*
+!/report/out/report.pdf
