@@ -2,3 +2,5 @@
 
 /report/out/*
 !/report/out/report.pdf
+
+/__pycache__
