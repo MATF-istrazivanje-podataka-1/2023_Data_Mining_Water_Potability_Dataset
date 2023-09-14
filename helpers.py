@@ -1,5 +1,11 @@
 import pandas as pd
-from sklearn.metrics import accuracy_score, confusion_matrix, classification_report, roc_curve, roc_auc_score
+from sklearn.metrics import (
+    accuracy_score,
+    confusion_matrix,
+    classification_report,
+    roc_curve,
+    roc_auc_score,
+)
 import matplotlib.pyplot as plt
 import joblib
 

@@ -1,5 +1,61 @@
-\documentclass{article}
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[serbian]{babel}
+\usepackage{geometry}
+\usepackage{upgreek}
+\geometry{a4paper}
+
+\title{Izveštaj}
+\author{Aleksa Stević}
+\date{Septembar 2023.}
+
 \begin{document}
-First document.
-This is a simple example, with no extra parameters or packages included.
+    \maketitle
+    \newpage
+    \section{Opis podataka}
+
+    Skup podataka sadrži podatke o kvalitetu vode iz 3276 različitih vodenih tela.
+    
+    \begin{itemize}
+        \item \textbf{PH - PH vrednost}:
+            Predstavlja balans između kiselog i baznog karaktera u vodi.
+            WHO preporuka za ovu vrednost je od 6.5 do 8.5.
+        \item \textbf{Hardness - tvrdoća}:
+            Tvrdoća vode uglavnom dolazi od kalcijumovih i magnezijumovih soli.
+            Ovaj atribut pretstavlja sposobnost vode da istaloži sapun od kalcijuma i magnezijuma. (??? TODO).
+        \item \textbf{Solids (TDS) - čvrsti minerali}:
+            Voda ima sposobnost da rastvori veliki broj minerala kao što su: kalijum, kalcijum, natrijum, bikarbonati,
+            hloridi, magnezijum, sulfati.
+            Preporučena vrednost količine čvrstih minerala u vodi je između 500 mg/l i 1000 mg/l.
+        \item \textbf{Chloramines - hloramini}:
+            Formiraju se kada se amonijak doda hloru za tretman vode.
+            Preporučene vrednosti su do 4 mg/l.
+        \item \textbf{Sulphates - sulfati}:
+            Prirodno prisutni u mineralima i stenama.
+            Koncentracija u svežoj vodi varira između 3 i 30 mg/l.
+        \item \textbf{Conductivity - provodljivost}:
+            Pokazuje koliko dobro voda provodi električnu struju.
+            Prema WHO standardima, vrednost električne provodljivosti ne bi trebalo da prelazi 400 $\upmu$S/cm.
+        \item \textbf{Organic\_carbon - organiski ugljenik}:
+            Mera ukupnog ugljenika u organskim jedinjenjima u vodi.
+            Prema US EPA standardima, <2 mg/l za pitku vodu.
+        \item \textbf{Trihalomethanes - trihalometani}:
+            Hemikalije prisutne u vodi tretiranoj hlorom.
+            Sigurne vrednosti su do 80 ppm (en. parts per million).
+        \item \textbf{Turbidity - zamućenost}:
+            Zamućenost je uzrokovana prisustvom čvrstih materija koje su rastvorene u vodi.
+            Predstavlja meru svetlosnih svojstva vode.
+            Preporučene WHO vrednosti su do 5.0 NTU.
+        \item \textbf{Potability - voda za piće}:
+            Ovo je ciljni atribut, pokazuje da li je voda bezbedna za piće.
+            Vrednost \texttt{0} znači ``za piće'', \texttt{1} znači da nije za piće
+    \end{itemize}
+
+    \section{Odabir modela}
+    \subsection{Stabla odlučivanja}
+    Nzm
 \end{document}
